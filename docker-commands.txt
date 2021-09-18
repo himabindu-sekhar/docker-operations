@@ -1,0 +1,38 @@
+   1  yum update -y
+    2  yum install docker -y
+    3  service docker start
+    4  service docker status
+    5  docker info
+    6  docker images
+    7  docker pull centos
+    8  docker images
+    9  docker pull jenkins/jenkins
+   10  docker images
+   11  docker run --name jenkins-test -itd -p 8080:8080 -p 50000:50000 jenkins/jenkins
+   12  docker ps
+   13  pwd
+   14  docker images
+   15  pwd
+   16  yum install git
+   17  pwd
+   18  mkdir Docker-Operations
+   19  cd Docker-Operations/
+   20  ls
+   21  git clone https://github.com/himabindu-sekhar/docker-operations.git
+   22  ls
+   23  cd docker-operations/
+   24  ls
+   25  vi dockerfile
+   26  docker build -t devops-dockerimage:1.0 .
+   27  vi dockerfile
+   28  docker build -t devops-dockerimage:1.0 .
+   29  ls
+   30  docker images
+   31  docker tag reddyprasad/devops-dockerimage:1.0 devops-dockerimage:1.0
+   32  docker tag devops-dockerimage reddyprasad/devops-dockerimage:1.0
+   33  docker tag devops-dockerimage:1.0 reddyprasad/devops-dockerimage:1.0
+   34  docker images
+   35  docker login
+   36  docker push reddyprasad/devops-dockerimage:1.0
+   37  history
+
